@@ -31,7 +31,7 @@ app.post('/send-transaction',  async (req, res) => {
 
 app.get('/get-balance', async (req, res) => {
    const balance = await web3.eth.getBalance("0xD94feD42719DB4E9ac48A587AD25bd14fC19B697")
-   res.send({ balance : balance});
+   res.send({ "balance" : balance});
 })
 
 app.post('/check-transaction', async (req, res) => {
